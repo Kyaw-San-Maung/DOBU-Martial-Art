@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Link for the CURD-->
+    <title>DOBU Martial Art</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   
+    <!--Custom Css Link-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontawsome cdn file link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!--Footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--JQuery CDN link-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+        .site-footer
+{
+  background-color:#ffffff;
+  padding:150px 0 80px;
+  font-size:18px;
+  line-height:24px;
+  color:#040404;
+  margin-top: 50px;
+  box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .7);
+}
+
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:50px;
+  height:50px;
+  line-height:20px;
+  margin-left:5px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  margin-top: -20px;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:9px;
+}
+
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:40px;
+  height:40px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+
+/* Copy text for style */
+.copytext{
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: -800px;
+}
+.copyright-text{
+    text-align: center;
+}
+.social-icons-text{
+    text-align: center;
+    margin-left: 90px;
+}
+    </style>
+</head>
+<body style="background:rgb(79, 79, 79); color: white;">
+
+        <!-- Header section starts -->
+        <header class="header" style="position: sticky;">
+        
+            <a href="a" class="logo">Do<span>bu</span></a>
+            
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Class Offer &nbsp; <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="martial_art.html">Martial Art</a></li>
+                        <li><a href="fitness.html">Fitness Class</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Membership-Offer &nbsp; <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="levelClass.html">Level Class</a></li>
+                        <li><a href="specialistClass.html">Specialist Class</a></li>
+                    </ul>
+                </li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li><a href="contactUs.html">Contact us</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+    
+            <div class="icons">
+                <a href="#" class="btn">Become a member</a>
+              <div id="menu-btn" class="fas fa-bars"></div>
+          </div>
+    
+        </header>
+    
+        <!-- Header section end -->
+
+    <!-- List of Data from user start-->
+    <div class="container">
+        <h1 style="color: white;">User List</h1>
+        <br />
+        <fieldset>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>UserId</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                        <th>Member Types</th>
+                        <th>Gender</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tblbody">
+                </tbody>
+            </table>
+        </fieldset>
+    </div>
+    <!-- List of Data from user end-->
+
+    <!--Footer part start-->
+    <footer class="site-footer">
+     
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 ">
+              <p class="copyright-text">This website is made by (Kyaw San Maung).
+              </p>
+            </div>
+
+            <div class="col-md-6" >
+           
+              <ul class="social-icons">
+              <span class="social-icons-text">Social Media of DOBU : </span>
+              &nbsp;
+                <li><a href="https://www.facebook.com/index.php" class="fa fa-facebook facebook"></a></li>
+                <li><a href="https://twitter.com/" class="fa fa-twitter twitter"></a></li>
+                <li><a href="https://www.linkedin.com/feed/" class="fa fa-linkedin linkedin"></a></li>
+                <li><a href="https://www.instagram.com/" class="fa fa-instagram dribbble"></a></li>   
+              </ul>
+            </div>
+
+            </div>
+            <div class="copytext">
+                <p>&copy; 2023 Educlaas From Myanmar</p>
+            </div>
+ 
+        </div>
+  </footer>
+    <!---Footer part end-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Custom Js File -->
+    <script src="script.js"></script>
+
+    <script>
+
+        bindUserData();
+        function addUserDataToLocalStorage(userObj) {
+    
+            //already has data in localstorage then update it other create new one
+            var users = JSON.parse(localStorage.getItem('userData'));
+            if (users != null) {
+                users.push(userObj);
+               
+                localStorage.setItem('userData', JSON.stringify(users));
+            }
+            else {
+                var userData = new Array();
+                userData.push(userObj);
+                localStorage.setItem('userData', JSON.stringify(userData));
+    
+            }
+        }
+    
+        function updateDataToLocalStorage(userObj) {
+    
+            var users = JSON.parse(localStorage.getItem('userData'));
+            if (users != null) {
+                var user = users.filter((x) => x.id == userObj.id).pop();
+                if (user != null) {
+                    user.name = userObj.name;
+                    user.email = userObj.email;
+                    user.age = userObj.age;
+                    user.member = userObj.member;
+                    user.gender = userObj.gender;
+                    user.status = userObj.status;
+                }
+                localStorage.setItem('userData', JSON.stringify(users));
+            }
+        }
+    
+        function deletedataFromLocalStorage(UserId) {
+    
+            var users = JSON.parse(localStorage.getItem('userData'));
+            if (users != null) {
+                users.splice(users.findIndex(a => a.id === UserId), 1)
+                localStorage.setItem('userData', JSON.stringify(users));
+            }
+        }
+    
+    
+        function bindUserData() {
+            
+            var users = JSON.parse(localStorage.getItem('userData'));
+            if (users != null) {
+                document.getElementById('tblbody').innerHTML = "";
+                users.forEach(function (item, index) {
+                    debugger;
+                    var btnEditId = "btnedit" + item.id;
+                    var btnDeleteId = "btndelete" + item.id;
+                    var tableRow = "<tr Id='" + item.id + "'   data-CustomerID='" + item.id + "'   data-name='" + item.name + "' data-email='" + item.email + "' data-age='" + item.age + "' data-member='" + item.member + "' data-gender='" + item.gender + "' data-status='" + item.status + "'>"
+                        + "<td class='td-data'>" + item.id + "</td>"
+                        + "<td class='td-data'>" + item.name + "</td>"
+                        + "<td class='td-data'>" + item.email + "</td>"
+                        + "<td class='td-data'>" + item.age + "</td>"
+                        + "<td class='td-data'>" + item.member + "</td>"
+                        + "<td class='td-data'>" + item.gender + "</td>"
+                        + "<td class='td-data'>" + item.status + "</td>"
+                        + "<td class='td-data'>" +
+                        "<button id='" + btnEditId + "' class='btn btn-info btn-xs btn-editcustomer' onclick='showEditRow(" + item.id + ")' style='font-size:1rem; padding:10% 30% '><i class='fa fa-pencil' aria-hidden='true' style='margin-right:.6rem;'></i>Edit</button>" +
+                        "<button id='" + btnDeleteId + "' class='btn btn-danger btn-xs btn-deleteCustomer' onclick='deleteRow(" + item.id + ")' style='font-size:1rem; padding:10% 24% '><i class='fa fa-trash' aria-hidden='true' style='margin-right:.6rem;'></i>Delete</button>"
+                        + "</td>"
+                        + "</tr>";
+                    document.getElementById('tblbody').innerHTML += tableRow;
+                })
+            }
+
+            
+            var AddRow = "<tr>"
+                + "<td class='td-data'></td>"
+                + "<td class='td-data'><input type='text' style='color:black;' id='txtname' placeholder='name..'></td>"
+                + "<td class='td-data'><input type='email' style='color:black;' id='txtemail' placeholder='email..'></td>"
+                + "<td class='td-data'><input type='number' style='color:black;' id='txtage' placeholder='age..'></td>"
+                + "<td class='td-data'><input type='text' style='color:black;' id='txtmember' placeholder='member type..'></td>"
+                + "<td class='td-data'><select id='ddlgender' style='color:black;'><option value='male'>male</option><option value='female'>female</option></select></td>"
+                + "<td class='td-data'><select id='ddlstatus' style='color:black;'><option value='active'>active</option><option value='inactive'>inactive</option></select></td>"
+                + "<td class='td-data'>" + "<button id= 'btnaddCustomer' onclick='addUser()' class='btn btn-success' style = 'font-size:1rem;'><i class='fa fa-plus-circle' aria-hidden='true' style = 'margin-right:.6rem;'></i>Add</button>" + "</td>"
+                + "</tr>";
+            document.getElementById('tblbody').innerHTML += AddRow;
+        }
+    
+        function GetUserID() {
+            const ID = Date.now();
+            return ID;
+        }
+    
+        function addUser() {
+        var userId = GetUserID();
+        var txtname = document.getElementById("txtname").value;
+        if (!txtname) {
+            alert('Please enter name!')
+            return false;
+        }
+        var email = document.getElementById("txtemail").value;
+        if (!email) {
+            alert('Please enter email!')
+            return false;
+        }
+        
+        var emailfilter = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if (!emailfilter.test(email)) {
+            alert('Please enter a valid email address!');
+            return false;
+        }
+
+        var age = document.getElementById("txtage").value;
+        if (!age) {
+            alert('Please enter age!')
+            return false;
+        }
+
+        var member = document.getElementById("txtmember").value;
+        if (!member) {
+            alert('Please enter member type!')
+            return false;
+        }
+        
+
+        var gender = document.getElementById("ddlgender").value;
+        var status = document.getElementById("ddlstatus").value;
+        var userObj = {
+            "id": userId,
+            "name": txtname,
+            "email": email,
+            "age" : age,
+            "member" : member,
+            "gender": gender,
+            "status": status
+        };
+        addUserDataToLocalStorage(userObj);
+        document.getElementById('txtname').value = "";
+        document.getElementById('txtemail').value = ""; 
+        document.getElementById('txtage').value = "";
+        document.getElementById('txtmember').value = "";
+        bindUserData();
+    };
+
+   
+        function showEditRow(UserID) {
+            var userRow = document.getElementById(UserID); //this gives tr of  whose button was clicked
+            var trdata = userRow.querySelectorAll(".td-data");
+            /*returns array of all elements with
+            "row-data" class within the row with given id*/
+            var userID = trdata[0].innerHTML;
+            var userName = trdata[1].innerHTML;
+            var useremail = trdata[2].innerHTML;
+            var userage = trdata[3].innerHTML;
+            var usermember = trdata[4].innerHTML;
+            var userGender = trdata[5].innerHTML;
+            var userStatus = trdata[6].innerHTML;
+    
+            trdata[0].innerHTML = '<input name="txtuserid" style="color:black"  disabled id="txtuserid" value="' + userID + '"/>';
+            trdata[1].innerHTML = '<input type="text" name="txtname" style="color:black" id="txtname" value="' + userName + '"/>';
+            trdata[2].innerHTML = '<input type="email" name="txtemail" style="color:black" id="txtemail" value="' + useremail + '"/>';
+            trdata[3].innerHTML = '<input type="number" name="txtage" style="color:black" id="txtage" value="' + userage + '"/>';
+            trdata[4].innerHTML = '<input type = "text" name="txtmember" style="color:black" id="txtmember" value="' + usermember + '"/>';
+            if (userGender == 'male') {
+                trdata[5].innerHTML = '<select id="ddlgender" style = "color:black;"><option value="male">male</option><option value="female">female</option></select>';
+            }
+            else {
+                trdata[5].innerHTML = '<select id="ddlgender" style = "color:black;"><option value="female">female</option><option value="male">male</option></select>';
+            }
+            if (userStatus == 'active') {
+                trdata[6].innerHTML = '<select id="ddlstatus" style = "color:black;"><option value="active">active</option><option value="inactive">inactive</option></select>';
+            }
+            else {
+                trdata[6].innerHTML = '<select id="ddlstatus" style = "color:black;"><option value="inactive">inactive</option><option value="active">active</option></select>';
+            }
+    
+            trdata[7].innerHTML =
+                "<button class='btn btn-primary btn-xs btn-updateCustomer' style='font-size:1rem; padding:10% 24%' onclick='updateUser(" + userID + ")'>" +
+                "<i class='fa fa-pencil' aria-hidden='true' style = 'margin-right:.6rem;'></i>Update</button>"
+                + "<button class='btn btn-warning btn-xs btn-cancelupdate' style='font-size:1rem; padding:10% 24%' onclick='cancel(" + userID + ")'><i class='fa fa-times' aria-hidden='true' style = 'margin-right:.6rem;'></i>Cancel</button>"
+                + "<button class='btn btn-danger btn-xs btn-deleteCustomer' style='font-size:1rem; padding:10% 24% ' onclick='deleteRow(" + userID + ")'>"
+                + "<i class='fa fa-trash' aria-hidden='true' style = 'margin-right:.6rem;'></i>Delete</button>"
+        }
+        function cancel(UserID) {
+            debugger;
+            var btneditId = "btnedit" + UserID;
+            var btndeleteId = "btndelete" + UserID;
+    
+            var CustomerRow = document.getElementById(UserID); //this gives tr of  whose button was clicked
+            var data = CustomerRow.querySelectorAll(".td-data");
+    
+            var name = CustomerRow.getAttribute("data-name");
+            var email = CustomerRow.getAttribute("data-email");
+            var age = CustomerRow.getAttribute("data-age");
+            var member = CustomerRow.getAttribute("data-member");
+            var gender = CustomerRow.getAttribute("data-gender");
+            var status = CustomerRow.getAttribute("data-status");
+    
+            data[0].innerHTML = UserID;
+            data[1].innerHTML = name;
+            data[2].innerHTML = email;
+            data[3].innerHTML = age;
+            data[4].innerHTML = member;
+            data[5].innerHTML = gender;
+            data[6].innerHTML = status;
+            var actionbtn = "<button id='" + btneditId + "' class='btn btn-info btn-xs btn-editcustomer' style='font-size:1rem; padding:10% 30% ' onclick='showEditRow(" + UserID + ")'><i class='fa fa-pencil' aria-hidden='true' style = 'margin-right:.6rem;'></i>Edit</button>" +
+                "<button id='" + btndeleteId + "' class='btn btn-danger btn-xs btn-deleteCustomer' style='font-size:1rem; padding:10% 24% ' onclick='deleteRow(" + UserID + ")'><i class='fa fa-trash' aria-hidden='true' style = 'margin-right:.6rem;'></i>Delete</button>"
+            data[7].innerHTML = actionbtn;
+        }
+        function updateUser(UserID) {
+            var userRow = document.getElementById(UserID); //this gives tr of  whose button was clicked
+            var data = userRow.querySelectorAll(".td-data");
+            var name = data[1].querySelector("#txtname").value;
+            var email = data[2].querySelector("#txtemail").value;
+            var age = data[3].querySelector("#txtage").value;
+            var member = data[4].querySelector("#txtmember").value;
+            var gender = data[5].querySelector("#ddlgender").value;
+            var status = data[6].querySelector("#ddlstatus").value;
+            var userObj = {
+                "id": UserID,
+                "name": name,
+                "email": email,
+                "age": age,
+                "member": member,
+                "gender": gender,
+                "status": status
+            };
+            updateDataToLocalStorage(userObj);
+            bindUserData();
+        }
+        function deleteRow(UserID) {
+            deletedataFromLocalStorage(UserID);
+            bindUserData();
+        }
+    </script>
+
+</body>
+</html>
